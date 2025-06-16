@@ -22,3 +22,5 @@ All content is constitutionally grounded, morally lawful, and backed by evidence
 This record is part of **[The Restoration of Democracy Project](https://x.com/chris_mader)**.  
 Follow updates, debate history, and challenge tyranny with evidence — not protest.
 
+“All submissions are available in editable .docx form for public reuse.
+Official sealed versions are stored in /PDFs for the permanent record.”
