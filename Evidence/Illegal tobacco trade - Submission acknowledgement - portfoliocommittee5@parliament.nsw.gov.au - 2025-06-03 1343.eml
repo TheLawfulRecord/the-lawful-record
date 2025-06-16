@@ -1,0 +1,121 @@
+Return-Path: <portfoliocommittee5@parliament.nsw.gov.au>
+Delivered-To: chris@mader.global
+Received: from cp-wc38.per01.ds.network
+	by cp-wc38.per01.ds.network with LMTP
+	id ELeTIm9vPmhEtSoADtuTag
+	(envelope-from <portfoliocommittee5@parliament.nsw.gov.au>)
+	for <chris@mader.global>; Tue, 03 Jun 2025 11:43:43 +0800
+Return-path: <portfoliocommittee5@parliament.nsw.gov.au>
+Envelope-to: chris@mader.global
+Delivery-date: Tue, 03 Jun 2025 11:43:43 +0800
+Received: from au-smtp-delivery-128.mimecast.com ([103.96.21.128]:24591)
+	by cp-wc38.per01.ds.network with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96.2)
+	(envelope-from <portfoliocommittee5@parliament.nsw.gov.au>)
+	id 1uMIYo-00C14B-1o
+	for chris@mader.global;
+	Tue, 03 Jun 2025 11:43:43 +0800
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=parliament.nsw.gov.au;
+	s=mimecast20230307; t=1748922184;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding;
+	bh=OywaJYDVW19NdpuVa+n9aYyt5BP8OzZY4lbcvlkgY/s=;
+	b=wXUfQYJz+szjb8/c5KzvqfJ1UnhWoAqJWgj9wYzHnKHNM2WaavvBETu6Xh5rcqCjhYehDS
+	d8lxgtMpFrbCkqjMYsrIB53MXvk/ghIX72XeIl+3bforVmCNqGt1TXM4arza85Worvmlxs
+	ILjvydCejdFt8rUjvxd3v+bHm4/bYDM=
+Received: from winzppimsapp01 (203.13.67.10 [203.13.67.10]) by
+ relay.mimecast.com with ESMTP id au-mta-23-opnNG9piPUK-aGeKi0l9hA-1; Tue,
+ 03 Jun 2025 13:43:02 +1000
+X-MC-Unique: opnNG9piPUK-aGeKi0l9hA-1
+X-Mimecast-MFC-AGG-ID: opnNG9piPUK-aGeKi0l9hA_1748922182
+MIME-Version: 1.0
+From: portfoliocommittee5@parliament.nsw.gov.au
+To: chris@mader.global
+Date: 3 Jun 2025 13:43:02 +1000
+Subject: Illegal tobacco trade - Submission acknowledgement
+Message-Id: <69584.125060313430200543@au-mta-23.au.mimecast.lan>
+X-Mimecast-Spam-Score: 0
+X-Mimecast-MFC-PROC-ID: kmnutGvFOlqrtpSvmLybACYDzlF6K5O_bcJQzLWHAuA_1748922182
+X-Mimecast-Originator: parliament.nsw.gov.au
+Content-Type: text/html; charset=WINDOWS-1252
+Content-Transfer-Encoding: quoted-printable
+X-Spam-Status: No, score=0.5
+X-Spam-Score: 5
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "cp-wc38.per01.ds.network",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ 
+ Content preview:  Thank you for your submission to this inquiry. We are currently
+    processing your submission and will contact you if we have any questions.
+    If you haven't already, please let us know how you would like your submission
+    published: 
+ 
+ Content analysis details:   (0.5 points, 8.5 required)
+ 
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [103.96.21.128 listed in bl.score.senderscore.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE:
+                             The query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [103.96.21.128 listed in sa-trusted.bondedsender.org]
+  0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML
+                             tag
+ -0.1 DKIMWL_WL_HIGH         DKIMwl.org - High trust sender
+X-Spam-Flag: NO
+
+<p><br /></p><p>Thank you for your submission to this inquiry. We are curre=
+ntly processing your submission and will contact you if we have any questio=
+ns.</p><p>If you haven't already, please let us know how you would like you=
+r submission published: </p><p><span style=3D"text-decoration:underline;">F=
+or submissions lodged by individuals</span> </p><p>Please let us know if yo=
+u are requesting that:&nbsp; &nbsp;</p><ul><li>your submission be published=
+ in full on the website including your name </li><li>your submission be pub=
+lished in full on the website but with your name removed    </li><li>only p=
+articular sections of your submission be published and other sections be ke=
+pt confidential   </li><li>all of your submission including your name be ke=
+pt confidential.   &nbsp; </li></ul><p><span style=3D"text-decoration:under=
+line;">For submissions lodged on behalf of an organisation</span> </p><p>Pl=
+ease consider the above options as they relate to the organisation, noting =
+that 'your name' in this instance refers to the organisation's name, not th=
+e individual submitting it. The name of an individual lodging a submission =
+on behalf of an organisation will not be published on the website. </p><p>P=
+lease note that personal contact details and signatures will automatically =
+be removed from all submissions. </p><p>Please also be aware that once a su=
+bmission is accepted by a committee it is protected by parliamentary privil=
+ege. This protection will not apply if the submission is published or discl=
+osed elsewhere. </p><p>Please check the committee's website https://www.par=
+liament.nsw.gov.au/committees/listofcommittees/Pages/committee-details.aspx=
+?pk=3D203 to follow the inquiry's progress, including the publication of su=
+bmissions, details of public hearings, and the release of the committee's r=
+eport. </p><p>Thank you again for contributing to the inquiry. <br /></p><p=
+>Yours sincerely&nbsp;&nbsp; </p><p></p><p>Anthony Hanna | Director Committ=
+ees<br />9230 2258&nbsp;<br />Portfolio Committee No. 5 - Justice and Commu=
+nities&nbsp;&nbsp; </p><p></p><p>Parliament House, Macquarie Street Sydney =
+NSW 2000 Australia </p><p></p><p><em>This email is solely for the named add=
+ressee and may be confidential. You should only read, disclose, transmit, c=
+opy, distribute, act in reliance on or commercialise the contents if you ar=
+e authorised to do so. If you are not the intended recipient of this email,=
+ please notify the sender by email immediately and then destroy any copy of=
+ this message. Except where otherwise specifically stated, views expressed =
+in this e-mail are those of the individual sender. The New South Wales Parl=
+iament does not guarantee that this communication is free of errors, virus,=
+ interception or interference. Please consider the environment before print=
+ing this email.&nbsp;</em> <br /></p><p></p>
+

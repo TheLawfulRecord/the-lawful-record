@@ -1,0 +1,670 @@
+Return-Path: <amanda.avnell@midwestern.nsw.gov.au>
+Delivered-To: chris@mader.global
+Received: from cp-wc38.per01.ds.network
+	by cp-wc38.per01.ds.network with LMTP
+	id yOWoIZ2XR2hvkTMADtuTag
+	(envelope-from <amanda.avnell@midwestern.nsw.gov.au>)
+	for <chris@mader.global>; Tue, 10 Jun 2025 10:25:33 +0800
+Return-path: <amanda.avnell@midwestern.nsw.gov.au>
+Envelope-to: chris@mader.global
+Delivery-date: Tue, 10 Jun 2025 10:25:33 +0800
+Received: from au-smtp-delivery-121.mimecast.com ([103.96.23.121]:53849)
+	by cp-wc38.per01.ds.network with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96.2)
+	(envelope-from <amanda.avnell@midwestern.nsw.gov.au>)
+	id 1uOog0-00EDMk-0d
+	for chris@mader.global;
+	Tue, 10 Jun 2025 10:25:33 +0800
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=midwestern.nsw.gov.au;
+	s=mimecast20200901; t=1749522293;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type;
+	bh=Rif1ID/l05GwXmASWoH3Ubw7ILQ8g6SYUmUwe4SeZpA=;
+	b=GYTmd0SMqvIYHE1Xxg0cqLHKFG0NUQDWTLoA+7PoO3uRzI8GNdRm3I6givA1kNjd7gZG3o
+	qiKUun0DoV49OgmSUgeQdexxmf28JJjVoyxW4cnrBc6wgFODlhaZWAYnjw6q0X20SAIrtA
+	uWMjdFwSC3224S+7lA3sWKgz2tUGH34=
+Received: from SY5PR01CU010.outbound.protection.outlook.com
+ (mail-australiaeastazon11022074.outbound.protection.outlook.com
+ [40.107.40.74]) by relay.mimecast.com with ESMTP with STARTTLS
+ (version=TLSv1.3, cipher=TLS_AES_256_GCM_SHA384) id
+ au-mta-36-7nn-Piy6P2-h3HHAkLCVxw-1; Tue, 10 Jun 2025 12:24:51 +1000
+X-MC-Unique: 7nn-Piy6P2-h3HHAkLCVxw-1
+X-Mimecast-MFC-AGG-ID: 7nn-Piy6P2-h3HHAkLCVxw_1749522291
+Received: from SYBP282MB4054.AUSP282.PROD.OUTLOOK.COM (2603:10c6:10:1a5::8) by
+ SY7P282MB5071.AUSP282.PROD.OUTLOOK.COM (2603:10c6:10:2af::18) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.8813.31; Tue, 10 Jun 2025 02:24:49 +0000
+Received: from SYBP282MB4054.AUSP282.PROD.OUTLOOK.COM
+ ([fe80::ea3d:9cb4:1f67:c81b]) by SYBP282MB4054.AUSP282.PROD.OUTLOOK.COM
+ ([fe80::ea3d:9cb4:1f67:c81b%5]) with mapi id 15.20.8792.040; Tue, 10 Jun 2025
+ 02:24:49 +0000
+From: Amanda Avnell <Amanda.Avnell@midwestern.nsw.gov.au>
+To: "chris@mader.global" <chris@mader.global>
+Subject: Draft Operational Plan 2025/26
+Thread-Topic: Draft Operational Plan 2025/26
+Thread-Index: AdvZrtXb71zVhF8CRiyBCsSVY0Homg==
+Date: Tue, 10 Jun 2025 02:24:49 +0000
+Message-ID: <SYBP282MB405428BA3457A8C426C19246EC6AA@SYBP282MB4054.AUSP282.PROD.OUTLOOK.COM>
+Accept-Language: en-AU, en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator: 
+x-bromium-msgid: ec44d91e-d83b-4a24-a9da-b0258a19992f
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: SYBP282MB4054:EE_|SY7P282MB5071:EE_
+x-ms-office365-filtering-correlation-id: 8f371baa-bfea-48f4-c5f8-08dda7c5f9db
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;ARA:13230040|366016|1800799024|376014|8096899003|4053099003|38070700018
+x-microsoft-antispam-message-info: =?us-ascii?Q?fX7fFI2OdDknGHoybDzamWvB1CJBIxNmJBLJPnWa1dPGYDO08usa3wmCkZAW?=
+ =?us-ascii?Q?DQCG6u8furTtvwIoC7RlucCi0fU7HTEIwCg674z7EpHN3+F05c/mDhzGMy/n?=
+ =?us-ascii?Q?puui2NZwKnXTwA4f3q6xlncgmFE58D8BLdnZnRobNdu7j67LRYcIcUeevktZ?=
+ =?us-ascii?Q?OVhNDr1bD2FWmDOHBP7bzUGTKNOlOIiTT2/hOkMNXSzGfIodnuyeQGGWjEcy?=
+ =?us-ascii?Q?l+ZykDlRcfzFEanCpzBa6Vkip3DN423NjUGbJynTkKae3ifCawsR9SM2XXpg?=
+ =?us-ascii?Q?/MaKf+cXkjDW6lFfEBT6pdUp2BHGmyYZGojAWy299KQD2z56SAwvMrEfCqGK?=
+ =?us-ascii?Q?M/JnwMv4Mw271A3MQebahJAH7otQSeTO7DzbxOB0zTz4xc7AhTzah5wJTY5h?=
+ =?us-ascii?Q?pbi+ZoZIgX7QWgjAvSU2DqySin98xFSUR2fZkafBeUsQKfAf+oAthJLKx3EF?=
+ =?us-ascii?Q?qIIq6dhbgLLnzr2ScZMYAurdAP0d0JjruhFs52QMkaLlFQ/XMp5e6H3byem1?=
+ =?us-ascii?Q?Ij5qC9rhE2I1TYcJlv1BBxbWPL/Ry6eeuggT/s6dlLO+0H5xZfushUWF8uKS?=
+ =?us-ascii?Q?21EpCHqxwJSsf0s5EzvBCsDexyVTCUyy2QajymYAH3RWW8FVoxo9QgDOJXKw?=
+ =?us-ascii?Q?LcqOtNh/ImGNgDEwMMlP4MqpOHIPpKHj9x8fRpMD7ilfeWWzDvISWoUAQ38K?=
+ =?us-ascii?Q?uaBK5ZbL0QmlfIClyEIO3NZolHhhz/LqXA8+qrheqOx3e3Prb15ZxjUX83zF?=
+ =?us-ascii?Q?oSq9TIgfNnrTlQAYukICdk7v4SK5UFMJtXT6ao8WAwpfBapGi7RxeRzYBKzr?=
+ =?us-ascii?Q?zmAe1a1B6GL/vrcWBOjaJTkOwgo/4lOjdNHzz7LrHDlPVSPySGrpefN7AHZS?=
+ =?us-ascii?Q?u/+qZboXeMh3WrKFILCkjw47/nNysl08bQUoygL7Q2Ob5pXbP12KcPm5Iy0N?=
+ =?us-ascii?Q?vnujY2c9iac22X3WfbPl6GSzooh05+pB6i7oWMOJ/jPRTboKx0W0BFj3vQ00?=
+ =?us-ascii?Q?vzLoOy8i0k6MQmZpSupQgOWxR76Eax/7LuRTmIND51zX9iVY9pLfKl74kY3I?=
+ =?us-ascii?Q?soM2SvaNFpAzVSrdbOq3rEUhfU6BSzVvwVudzgydVSJamqATxqfALhorbELb?=
+ =?us-ascii?Q?yuKIZazeDU9IUYVw4jsTlALoGcq9kIy+wpdHFeYvAbibtUIWqtTwGGvBqG8T?=
+ =?us-ascii?Q?XYfcah7MeMTSUdXWwGbNBguWV+V4xP2tuDd4OF8Qydb1qipAvYmOj4s7t61h?=
+ =?us-ascii?Q?g7K71zuA06FbKXtBTCYK1DXFzIa42vOUxMtDOyAzLxiXfdkPSGy8FaODtRdf?=
+ =?us-ascii?Q?KeGHufe1RBXpBT98R3wV94aiHXvcdfp7SkxBT5Az/4fSQnp57ezBlFGWMVyG?=
+ =?us-ascii?Q?m8E1osP7v+Av2Y5msMuPVsa96Q2JNBCEODtWlO2kVu66xb9NXdFzTcoXkAWS?=
+ =?us-ascii?Q?MSjFU1sj24rq2l1ldFg7nGWopCOZQ6Msp2grR2A/63q1pwZzaEZ2qvtDBnta?=
+ =?us-ascii?Q?RGLRKQuQ6dCUyEg=3D?=
+x-forefront-antispam-report: CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SYBP282MB4054.AUSP282.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230040)(366016)(1800799024)(376014)(8096899003)(4053099003)(38070700018);DIR:OUT;SFP:1102
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0: =?us-ascii?Q?CGwImV1/mr6QG0Dczx2khOtTeQ4cTXmTmFimU7VD38GX7mWWFOjW0aeJ/ECq?=
+ =?us-ascii?Q?UrnRQrGMVxjjOxF5uFXaM5NFHy7snnxRyJs4bi5dmbyq3I4rtRznGNDmv8aa?=
+ =?us-ascii?Q?mW1ePXVJ3r0/bcfQcH/fh3grvWaN1daBLS858A0+I55veFtoRWStgKKz1t99?=
+ =?us-ascii?Q?OoRzuPX+0lCrIesAQUpLxgL543hlacnW/ixIS2Gw1W5WuVupHPRiPMDnqeUd?=
+ =?us-ascii?Q?oLegQRepsVMZdUkl/mL0IVISm+S/fC9xACZPPhglRL94buEEis85sHhZnQJt?=
+ =?us-ascii?Q?svfzcHt0fqFcDcgFzV3dDPP0ZB0GVKX+BhIuCJKMndyCZH2kfnlD9EmAuFCs?=
+ =?us-ascii?Q?YtvRB04hVe58hvTgFDatxlR/lEmQIGwAKBp2OZxT4xKB+61GnqxcVIk5YewK?=
+ =?us-ascii?Q?x4S448uApZeYi94yHLGKYNIlF0N49ke2ziOc+j0cc/7p5w7kRlZqNmCJAg8F?=
+ =?us-ascii?Q?A1j7fVyYLTwa1KoQWiHnX2bexAagTfQdNSvzE5TWs9AiFNXMAb6IWdD6Ke6j?=
+ =?us-ascii?Q?GIEhh+M/FLwkPraCrVBrANu6kY0KBvNV30EGF2sg0k7BfBdz+hqEypNtKxll?=
+ =?us-ascii?Q?2Gbn93bJF0Kz7DFjvzQTa7/6S+LRqK2qpZGj7jituLfKKmAyUEw9jYQ0rO1o?=
+ =?us-ascii?Q?4W8bBhxjKlxs0d5L6VayD1qQYbEesZBXKxvNjbtctEGnDqlqdyDMd7PQ/q0q?=
+ =?us-ascii?Q?TP/L4Eu0zyK2CmRYH9XRic2/ZyHId5eDde83TV/LddYdWFuvRFrPf11LSykS?=
+ =?us-ascii?Q?vnwGt3jVIdpvEy/muHbiypfKkRSgZjbss3e8CPayAPmIYu4ckjjR3+GaYwRt?=
+ =?us-ascii?Q?ghMl+KkBSIN0+S85tIpzQArKxkLfvCO0YPSa1xVfD9CKhXmAx3Nr6BFVKPor?=
+ =?us-ascii?Q?w1SPBD253ZYq+ihka9umn0+mQDSIvnI74v6fgMFKk0NL4upr7ZTdNKyiS+MF?=
+ =?us-ascii?Q?DgTcMMJlWtFunUzJ2Ct80AjxdyKEHeQYK0p4AFDmC3yPTOpV3GUu3NmV3bO0?=
+ =?us-ascii?Q?NRe+emNS72Qv8oWLK039XTyo7I0rm8gKFsw7gq186ZCpE3sgXu2umUgdOCA5?=
+ =?us-ascii?Q?WFpzrvkWeDp+AJ0P7FTrOOjS7L2Dqb36gWN15f5fIW1+krsqiDQxFJxDgsrB?=
+ =?us-ascii?Q?xbvXw30bJy9kq/mZzVDUC1MlFe/8iU7GKDsepNJBUotkY3HDxQeKpN7kjMyJ?=
+ =?us-ascii?Q?7sZoRuLvJXwYt6plI1nWikFLoJL7HXWN4XosGU2zZfEnEFUXVoh9Yll/Hhnz?=
+ =?us-ascii?Q?lft5V3qVNwJZ7Xp/tY38NgPwkltbdbszF5i+9bHMMMpfJZ5uOT3RG9WiWaCY?=
+ =?us-ascii?Q?dbtR47naFIeJ46pcXOW4t8YCljv1+FBAfNIsK+1/G0UQX9qgN1k9xcblcela?=
+ =?us-ascii?Q?wU/JRvN+ePyc38g8eQqTGiuBqZbqScLoUlcZB3mncYuyv6rBwYsOJ85eu1hX?=
+ =?us-ascii?Q?CbFlwl4dEuJ4CQyFANI3PP/qPcNpNNS3/bp5MtLr4GnyT2OBVYZ30f3U2OOk?=
+ =?us-ascii?Q?9kn7Ox5VU1yPiUgiuSrMNBlWipvVK0WL8GmEF1YIswj+zQSEWGeyUZqxQsaX?=
+ =?us-ascii?Q?oHV5dKTBGqJlPVKtes/KM01R4wrNMAttYbig367USZmTnYBvh6ZLxtEJy387?=
+ =?us-ascii?Q?B2a2Tpx9y43eGyk92szzZ1M=3D?=
+MIME-Version: 1.0
+X-OriginatorOrg: midwestern.nsw.gov.au
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: SYBP282MB4054.AUSP282.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-Network-Message-Id: 8f371baa-bfea-48f4-c5f8-08dda7c5f9db
+X-MS-Exchange-CrossTenant-originalarrivaltime: 10 Jun 2025 02:24:49.8634
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: ad522275-0602-4507-a5fc-e756eb7d8723
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: pdilpGdU1W2NMaodGEDgbERU8zE/whlpqtpYjWIfOTuZH1w42QLotb5T8NUDrUKpJq44jqYX3Hzu9sXNwgdt7Yf+8GRkbMNdmPH5qYDLLJ8MoAamYfs4c/Z8WfFxj6t7
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SY7P282MB5071
+X-Mimecast-Spam-Score: 0
+X-Mimecast-MFC-PROC-ID: ej_2VG2dOK0LrdnXZhkf_ylEO8uPOBdhaAVM7gMrJk0_1749522291
+X-Mimecast-Originator: midwestern.nsw.gov.au
+Content-Language: en-US
+Content-Type: multipart/related;
+	boundary="_004_SYBP282MB405428BA3457A8C426C19246EC6AASYBP282MB4054AUSP_";
+	type="multipart/alternative"
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "cp-wc38.per01.ds.network",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ 
+ Content preview:  Dear Chris Mader Submission to Operational Plan 2025/26 Council
+    would like to thank you for your submission to the Draft Operational Plan.
+    
+ 
+ Content analysis details:   (0.3 points, 8.5 required)
+ 
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [103.96.23.121 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE:
+                             The query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [103.96.23.121 listed in sa-trusted.bondedsender.org]
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+ -0.1 DKIMWL_WL_HIGH         DKIMwl.org - High trust sender
+X-Spam-Flag: NO
+
+--_004_SYBP282MB405428BA3457A8C426C19246EC6AASYBP282MB4054AUSP_
+Content-Type: multipart/alternative;
+	boundary="_000_SYBP282MB405428BA3457A8C426C19246EC6AASYBP282MB4054AUSP_"
+
+--_000_SYBP282MB405428BA3457A8C426C19246EC6AASYBP282MB4054AUSP_
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+
+
+
+Dear Chris Mader
+
+Submission to Operational Plan 2025/26
+
+Council would like to thank you for your submission to the Draft Operationa=
+l Plan.
+
+Please be advised that at the Council meeting of 21 May 2025, your proposal=
+ was considered and the outcome is detailed below:
+
+Submission
+Outcome
+1.  Breach of Democratic Principles
+2. Illegitimate Alignment with Foreign Entities
+3. Corporate Model of Governance
+4. Failure to Uphold Sovereign Self-Governance
+Council can confirm that the Operational Plan and Delivery Program has been=
+ prepared in accordance with the Local Government Act 1993 and the Integrat=
+ed Planning and Reporting guidelines as set by the Office of Local Governme=
+nt which includes consultation with the Community inline with our Community=
+ Engagement Strategy.
+
+
+Should you have any queries in relation to this matter please contact me on=
+ 02 6378 2850
+
+
+
+Yours sincerely,
+
+[A close-up of a black text  AI-generated content may be incorrect.]
+Amanda AVNELL
+financial planning coordinator
+
+PRIVATE AND CONFIDENTIAL - MIDWESTERN REGIONAL COUNCIL=20
+This email and any files transmitted with it are confidential and intended =
+solely for the use of the individual or entity to whom they are addressed. =
+If you are not the intended recipient you are hereby notified that any diss=
+emination, distribution or copying of this email is strictly prohibited. If=
+ you have received this email in error please disregard the contents of the=
+ email, delete the email and notify the author immediately. Thank you.
+
+
+--_000_SYBP282MB405428BA3457A8C426C19246EC6AASYBP282MB4054AUSP_
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+=09{font-family:"Cambria Math";
+=09panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+=09{font-family:Tahoma;
+=09panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+=09{font-family:"Arial Narrow";
+=09panose-1:2 11 6 6 2 2 2 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+=09{margin:0cm;
+=09text-align:justify;
+=09font-size:11.0pt;
+=09font-family:"Arial",sans-serif;
+=09mso-fareast-language:EN-US;}
+.MsoChpDefault
+=09{mso-style-type:export-only;
+=09font-family:"Calibri",sans-serif;
+=09mso-ligatures:none;
+=09mso-fareast-language:EN-US;}
+.MsoPapDefault
+=09{mso-style-type:export-only;
+=09margin-bottom:10.0pt;
+=09line-height:115%;}
+/* Page Definitions */
+@page
+=09{mso-endnote-separator:url("cid:header.htm\@01DBDA02.A7939B60") es;
+=09mso-endnote-continuation-separator:url("cid:header.htm\@01DBDA02.A7939B6=
+0") ecs;}
+@page WordSection1
+=09{size:595.3pt 841.9pt;
+=09margin:72.0pt 72.0pt 72.0pt 72.0pt;
+=09mso-footer:url("cid:header.htm\@01DBDA02.A7939B60") f1;}
+div.WordSection1
+=09{page:WordSection1;}
+/* List Definitions */
+@list l0
+=09{mso-list-id:-132;
+=09mso-list-type:simple;
+=09mso-list-template-ids:-1382627252;}
+@list l0:level1
+=09{mso-level-tab-stop:74.6pt;
+=09mso-level-number-position:left;
+=09margin-left:74.6pt;
+=09text-indent:-18.0pt;}
+@list l1
+=09{mso-list-id:-131;
+=09mso-list-type:simple;
+=09mso-list-template-ids:-1969579758;}
+@list l1:level1
+=09{mso-level-tab-stop:60.45pt;
+=09mso-level-number-position:left;
+=09margin-left:60.45pt;
+=09text-indent:-18.0pt;}
+@list l2
+=09{mso-list-id:-130;
+=09mso-list-type:simple;
+=09mso-list-template-ids:-467258576;}
+@list l2:level1
+=09{mso-level-tab-stop:46.3pt;
+=09mso-level-number-position:left;
+=09margin-left:46.3pt;
+=09text-indent:-18.0pt;}
+@list l3
+=09{mso-list-id:-129;
+=09mso-list-type:simple;
+=09mso-list-template-ids:-1525761450;}
+@list l3:level1
+=09{mso-level-tab-stop:32.15pt;
+=09mso-level-number-position:left;
+=09margin-left:32.15pt;
+=09text-indent:-18.0pt;}
+@list l4
+=09{mso-list-id:-128;
+=09mso-list-type:simple;
+=09mso-list-template-ids:1182853962;}
+@list l4:level1
+=09{mso-level-number-format:bullet;
+=09mso-level-text:\F0B7;
+=09mso-level-tab-stop:74.6pt;
+=09mso-level-number-position:left;
+=09margin-left:74.6pt;
+=09text-indent:-18.0pt;
+=09font-family:Symbol;}
+@list l5
+=09{mso-list-id:-127;
+=09mso-list-type:simple;
+=09mso-list-template-ids:-673251556;}
+@list l5:level1
+=09{mso-level-number-format:bullet;
+=09mso-level-text:\F0B7;
+=09mso-level-tab-stop:60.45pt;
+=09mso-level-number-position:left;
+=09margin-left:60.45pt;
+=09text-indent:-18.0pt;
+=09font-family:Symbol;}
+@list l6
+=09{mso-list-id:-126;
+=09mso-list-type:simple;
+=09mso-list-template-ids:-705542218;}
+@list l6:level1
+=09{mso-level-number-format:bullet;
+=09mso-level-text:\F0B7;
+=09mso-level-tab-stop:46.3pt;
+=09mso-level-number-position:left;
+=09margin-left:46.3pt;
+=09text-indent:-18.0pt;
+=09font-family:Symbol;}
+@list l7
+=09{mso-list-id:-125;
+=09mso-list-type:simple;
+=09mso-list-template-ids:-1798125160;}
+@list l7:level1
+=09{mso-level-number-format:bullet;
+=09mso-level-text:\F0B7;
+=09mso-level-tab-stop:32.15pt;
+=09mso-level-number-position:left;
+=09margin-left:32.15pt;
+=09text-indent:-18.0pt;
+=09font-family:Symbol;}
+@list l8
+=09{mso-list-id:-120;
+=09mso-list-type:simple;
+=09mso-list-template-ids:619194024;}
+@list l8:level1
+=09{mso-level-tab-stop:18.0pt;
+=09mso-level-number-position:left;
+=09margin-left:18.0pt;
+=09text-indent:-18.0pt;}
+@list l9
+=09{mso-list-id:-119;
+=09mso-list-type:simple;
+=09mso-list-template-ids:1772910134;}
+@list l9:level1
+=09{mso-level-number-format:bullet;
+=09mso-level-text:\F0B7;
+=09mso-level-tab-stop:18.0pt;
+=09mso-level-number-position:left;
+=09margin-left:18.0pt;
+=09text-indent:-18.0pt;
+=09font-family:Symbol;}
+@list l10
+=09{mso-list-id:762384501;
+=09mso-list-type:hybrid;
+=09mso-list-template-ids:-1498626586 201916431 201916441 201916443 20191643=
+1 201916441 201916443 201916431 201916441 201916443;}
+@list l10:level1
+=09{mso-level-tab-stop:none;
+=09mso-level-number-position:left;
+=09text-indent:-18.0pt;}
+@list l10:level2
+=09{mso-level-number-format:alpha-lower;
+=09mso-level-tab-stop:none;
+=09mso-level-number-position:left;
+=09text-indent:-18.0pt;}
+@list l10:level3
+=09{mso-level-number-format:roman-lower;
+=09mso-level-tab-stop:none;
+=09mso-level-number-position:right;
+=09text-indent:-9.0pt;}
+@list l10:level4
+=09{mso-level-tab-stop:none;
+=09mso-level-number-position:left;
+=09text-indent:-18.0pt;}
+@list l10:level5
+=09{mso-level-number-format:alpha-lower;
+=09mso-level-tab-stop:none;
+=09mso-level-number-position:left;
+=09text-indent:-18.0pt;}
+@list l10:level6
+=09{mso-level-number-format:roman-lower;
+=09mso-level-tab-stop:none;
+=09mso-level-number-position:right;
+=09text-indent:-9.0pt;}
+@list l10:level7
+=09{mso-level-tab-stop:none;
+=09mso-level-number-position:left;
+=09text-indent:-18.0pt;}
+@list l10:level8
+=09{mso-level-number-format:alpha-lower;
+=09mso-level-tab-stop:none;
+=09mso-level-number-position:left;
+=09text-indent:-18.0pt;}
+@list l10:level9
+=09{mso-level-number-format:roman-lower;
+=09mso-level-tab-stop:none;
+=09mso-level-number-position:right;
+=09text-indent:-9.0pt;}
+ol
+=09{margin-bottom:0cm;}
+ul
+=09{margin-bottom:0cm;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"2050" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"2" />
+</o:shapelayout></xml><![endif]-->
+<style type=3D"text/css">.style1 {font-family: "Times New Roman";}</style><=
+/head><body lang=3D"EN-AU" link=3D"#0089CF" vlink=3D"#7F7F7F" style=3D"word=
+-wrap:break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span lang=3D"DE"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"DE">Dear Chris Mader<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span lang=3D"DE"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal" align=3D"left" style=3D"text-align:left"><b><u><span=
+ style=3D"font-size:12.0pt">Submission to Operational Plan 2025/26</span></=
+u></b><b><span style=3D"font-size:12.0pt"><o:p></o:p></span></b></p>
+<p class=3D"MsoNormal" align=3D"left" style=3D"text-align:left"><b><o:p>&nb=
+sp;</o:p></b></p>
+<p class=3D"MsoNormal">Council would like to thank you for your submission =
+to the Draft Operational Plan.</p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Please be advised that at the Council meeting of 21 =
+May 2025, your proposal was considered and the outcome is detailed below:</=
+p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<table class=3D"MsoTable15Plain1" border=3D"1" cellspacing=3D"0" cellpaddin=
+g=3D"0" width=3D"100%" style=3D"width:100.0%;border-collapse:collapse;borde=
+r:none">
+<tbody>
+<tr style=3D"height:22.7pt">
+<td width=3D"28%" style=3D"width:28.24%;border:solid #BFBFBF 1.0pt;padding:=
+0cm 5.4pt 0cm 5.4pt;height:22.7pt">
+<p class=3D"MsoNormal" align=3D"left" style=3D"text-align:left"><b>Submissi=
+on<o:p></o:p></b></p>
+</td>
+<td width=3D"71%" style=3D"width:71.76%;border:solid #BFBFBF 1.0pt;border-l=
+eft:none;padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
+<p class=3D"MsoNormal" align=3D"left" style=3D"text-align:left"><b>Outcome<=
+o:p></o:p></b></p>
+</td>
+</tr>
+<tr style=3D"height:18.65pt">
+<td width=3D"28%" style=3D"width:28.24%;border:solid #BFBFBF 1.0pt;border-t=
+op:none;background:#F2F2F2;padding:0cm 5.4pt 0cm 5.4pt;height:18.65pt">
+<p class=3D"MsoNormal" align=3D"left" style=3D"text-align:left"><b><span st=
+yle=3D"font-family:&quot;Arial Narrow&quot;,sans-serif;color:black">1.&nbsp=
+; Breach of Democratic Principles</span></b><b><span style=3D"font-family:&=
+quot;Arial Narrow&quot;,sans-serif"><o:p></o:p></span></b></p>
+<p class=3D"MsoNormal" align=3D"left" style=3D"text-align:left"><b><span st=
+yle=3D"font-family:&quot;Arial Narrow&quot;,sans-serif;color:black">2. Ille=
+gitimate Alignment with Foreign Entities</span></b><b><span style=3D"font-f=
+amily:&quot;Arial Narrow&quot;,sans-serif"><o:p></o:p></span></b></p>
+<p class=3D"MsoNormal" align=3D"left" style=3D"text-align:left"><b><span st=
+yle=3D"font-family:&quot;Arial Narrow&quot;,sans-serif;color:black">3. Corp=
+orate Model of Governance</span></b><b><span style=3D"font-family:&quot;Ari=
+al Narrow&quot;,sans-serif"><o:p></o:p></span></b></p>
+<p class=3D"MsoNormal" align=3D"left" style=3D"text-align:left"><b><span st=
+yle=3D"font-family:&quot;Arial Narrow&quot;,sans-serif;color:black">4. Fail=
+ure to Uphold Sovereign Self-Governance</span></b><span style=3D"font-famil=
+y:&quot;Arial Narrow&quot;,sans-serif"><o:p></o:p></span></p>
+</td>
+<td width=3D"71%" style=3D"width:71.76%;border-top:none;border-left:none;bo=
+rder-bottom:solid #BFBFBF 1.0pt;border-right:solid #BFBFBF 1.0pt;background=
+:#F2F2F2;padding:0cm 5.4pt 0cm 5.4pt;height:18.65pt">
+<p class=3D"MsoNormal" align=3D"left" style=3D"text-align:left"><span style=
+=3D"font-family:&quot;Arial Narrow&quot;,sans-serif;color:black">Council ca=
+n confirm that the Operational Plan and Delivery Program has been prepared =
+in accordance with the Local Government Act 1993 and
+ the Integrated Planning and Reporting guidelines as set by the Office of L=
+ocal Government which includes consultation with the Community inline with =
+our Community Engagement Strategy.</span><span style=3D"font-family:&quot;A=
+rial Narrow&quot;,sans-serif"><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Should you have any queries in relation to this matt=
+er please contact me on 02 6378 2850
+</p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Yours sincerely,</p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><img width=3D"154" height=3D"55" id=3D"Picture_x0020=
+_2" src=3D"cid:image001.png@01DBDA02.A7939B60" alt=3D"A close-up of a black=
+ text=0A=0AAI-generated content may be incorrect."></p>
+<p class=3D"MsoNormal"><span style=3D"text-transform:uppercase">Amanda AVNE=
+LL<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><u><span style=3D"text-transform:uppercase">financia=
+l planning coordinator<o:p></o:p></span></u></p>
+</div>
+
+
+<br><br><hr><p style=3D"font-family: Verdana; font-size:10pt; color:#666666=
+;">PRIVATE AND CONFIDENTIAL - MIDWESTERN REGIONAL COUNCIL </p><p style=3D"f=
+ont-family: Verdana; font-size:8pt; color:#666666;">This email and any file=
+s transmitted with it are confidential and intended solely for the use of t=
+he individual or entity to whom they are addressed. If you are not the inte=
+nded recipient you are hereby notified that any dissemination, distribution=
+ or copying of this email is strictly prohibited. If you have received this=
+ email in error please disregard the contents of the email, delete the emai=
+l and notify the author immediately. Thank you.</p></body></html>
+
+--_000_SYBP282MB405428BA3457A8C426C19246EC6AASYBP282MB4054AUSP_--
+
+--_004_SYBP282MB405428BA3457A8C426C19246EC6AASYBP282MB4054AUSP_
+Content-Type: image/png; name="image001.png"
+Content-Description: image001.png
+Content-Disposition: inline; filename="image001.png"; size=6276;
+	creation-date="Tue, 10 Jun 2025 02:24:49 GMT";
+	modification-date="Tue, 10 Jun 2025 02:24:49 GMT"
+Content-ID: <image001.png@01DBDA02.A7939B60>
+Content-Transfer-Encoding: base64
+
+iVBORw0KGgoAAAANSUhEUgAAAJoAAAA3CAYAAAD0fVMnAAAAAXNSR0IArs4c6QAAAAlwSFlzAAAO
+xAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUATWljcm9zb2Z0IE9mZmljZX/tNXEAABgESURBVHhe
+7VwHWFXH1l10KdKkWhCjICjYYu8NNYqiBmtEY0lsMVGMKRpje88SSxJLIgZNNLE37L0ixIYN0aDS
+m1TpvfzrnOsFlHK56CV5f+7k44vAPWdm9qzZs/bae1AvYoOyKS2gYAuoK/j9ytcrLSBaQAk0JRBq
+xAJKoNWImZWdKIGmxECNWEAJtBoxs7ITJdCUGKgRCyiBViNmVnbyNwJNkO9UlCvwL7FAjQItJzcH
+K1f8CENDQ8ya9RFUVf8lVlZOs2Z1tEd/PcPOPSfRpoU9ZswoINBqFOfK5f4bLVCjK/3saSjUVVXQ
+sk0zaGio/Y3TVnZd0xaoUaDdvHUf6urqsGrYUMnPanql/+b+agxokVExeBIYhSa29tDVrrFu/2bz
+KruXWkDBKy5ElkUoKMzHvsMXUahuCF2tLKirKAtG/m0QVDDQBHOqIjw0Dhcu+ENTpxbSU2KQV5D/
+ZnYuRxnJycmBlpbWm71X+bTCLKBgoEl0shMnfWBv3xT6BmrYv+MKAVHrDSdUKAI4OzcXB/cfgefP
+m5CVk43O3Xtj0uQJcGjW9A3fr3z8bVtAwUADbty4hZ0792DNhtW4ft0XampqsLSwfLN5qKgiMTkZ
+W7bux95de6CvrQor6yY4d/4aEhNfYKvnegYdGm/Wx//40xcv/4mCglw49elRpZnExycg6FkIWrV2
+QK1a2lV6Rp4PvRHQ0jOy8Px5IoKDI5GXX4CkhDjU0lKDY8tmaGrbGCoqKtiz9wTs7G3xbktrhIcF
+QUdHkxPRlGeMLz8rnJeCJ1PD9Vt38euOg8hMy8LSpQvQz6kLamlqYcE3K3Hl8iXExsahXr161ejj
+f/0RiacPjYjG2tUbkZqeQXHcCO3ebVHJxCQ85PDh49i92wtr1y5FmzaVfb56NqoW0DKzs3Dw4Cnc
+ufcUenom0NBUg66eNtJSUhD3PA6XrtxFRlosTM30ERT8HP/5z0LU0lBHWnISd1mO6NWq19Rw/2EA
+Ppnpjo4du2DJ4jl4x7q++KpsZh0CHgXA2roRDAwMxJ8VFhZwI8TA1NSMul11wF29Uf59T0moir9/
+IArp9VU1a8H72nUZQJM8ExoSisyMbMTFJypk+HIDLTg0HGtW/4LaurXRv09nei97GOjrUrKoxeiy
+kF8qKKB32/brH/j6yxVo0qQRcnMyxcHHc9GF36mqVgdoKggKCsH0qZ+ikVV9LFk0F3XqGBUbZZPH
+Fjx+9Ig7eQXBryf+/NTpS1i6eDUmTfkAUz8erxAD/rNeKgHNs6BQOikNcV3SUjKQl5fHjVYxlcjN
+y0FsYhI3axZevEhSyJTkAlpRUSE8PLbzSFTDvHmTYWJa55VBqRNA4gs1VWFuaYquvXqge/de8PZ9
+DE1GhBlpGaitZwitahydUdFR+HDiFOjX1sW6dauKQZaXl4+V332PAydOYubM6XjvvT7FY3oUFAUV
+dT1cPO8N1/ed+YyxQoz4T3ppRkYG7t19CEfH1khJeYH4uASZQEsgrw0Li0NRkToDNcV4frmA9owe
+JSQ4Dl/Mm/4SZK/rDJLvExKScGjvSbRr3QxzZo/G9T/vYfe+83TLGTw2IXfUWVBQyD7no7BAhZ7y
+F9S1NBfXNiRE8K4/wMf3Jj6fNxtjRg2DmnqJt9Sm163fuAlSEyNpyPB/BNCkl84E/qqI9uBBAAIf
+B8J5iAv87t5GYbYqOXHlUf4dv4fIzsiFuYkh6ta1UMSw5Euq+/kxhUSu09C6HtFfSM9WfvnF5cvX
+kJWdgyGD+5CbqaJn9zZ059E443UQjd+xJKeTT+/atMkDd+4EYPuOLSLIXiSn4vcd+7B/32HY2dli
+06Z16NKlfRkDvSDgVXiU5+fnI53eVFhkRS2wPKujyDHEPH+OwvwcaKrno4hCuSp3tqqMMpnIyGhG
+689hb2MNQ6MSOiLPnGR9Vi6PlpaagpiYMJFklw8yFbrpfHqYG7Aij7Jv3qS4/yY2Fkh6HoxOHZox
+cKi6juZ97QZ+274Hcz93R6uWDjh6/Cw8t+5GTHQMpn40HqNHDyMnk4Tjpf1rDCPPhwwcGjZqguz0
+WB4jqRCOFSl/k2UYRf1ekSATxnzm9HkRNCbGtZGckEiqIntThwQ/Q2Z6Empp2zCQkvDbt93kApqB
+QW2Sy1QxQjE3K5/vbPX8A/cePGGYvBi6OjrF4zU11uNk0sR0lGYVNa6kF6lYt3YzjM0bIiElC25u
+MxEZHYeuXdqJwUDrVg6v2KP0YSRIL1nMFqSlJokeVIg8BZAV8T+V/6cFlymM+h89fAwtTQ3Rm0VH
+RsDFpV+lmClkAPcs8AnyqCRYWTeAhbmElrztJhfQHB0dULu2HqKi48sdh8DhDh06jf5OTmhDLa20
+jzEyNoK2rjbCQsOqdIRFREbh888X4faNm7B3bAXvy5cxaFB/9O7ZiRpdowqPbenAsnl0Z2ekI+Tp
+U2ioFpKfSSQPxTCjypZFmteV9vz697KXNDEpGcbGhjLHLvDQmJhYUbfML6C0E8t/20mzJOVXNEdF
+RfN0iIamhhbatWunsE0oF9DsmEZq3LgBdmzfi76UNvT1a79ipd93HoS+sTFGjxpUZklzcrIYcash
+NzcPOTm5JKhlXbow6YjwKEQlpGDN8jW4cd0Ho0YMxfRPpqJ58+avyBmylic+Lg5xEeHQra1PTmkJ
+A0MJ0Goeaq9Du+pQf/YsCGu+90BEVCw6dmqPKR+OhKW56SsbuLQdHj58hMSEVLRs6YjcfA06BQM0
+bCjRGSua930GD7F8v6WlBVq2evtCrXR8cgFNOHKmTvsQY9//EKNc3fDjxjWwtZXwMG+fW7h5/TE+
+nj6OomlZVV44toy42MlMHQlk3tLCFIUk50HBYbh18x4eB4YgKDQUzLizXs2Wrl8NLs7O+HbRfHI9
+e1m4KvN74d1paalQ09SEY4sWPDpN5H5HxQ+85h0quf5wklpeErWp4UMHIZKb6H7AIwjpnkh6n06d
+OmDgwH6MxMsGVZlZ2fhszre46euHsZM/wJ/X75G2pJMyuENbq3xNLDU1jUFYBiwsLHD1qjfzy7Zo
+0KBBpfP29b6KhMQYTJkxUdQ8FdXkApowiHZtW+ObRfPgPmcBenXpj49nTELPHj2wbesBmJkbYtjg
+XmXGmsvkt3DcquarU2pIxi+eO6GqUkCQRSM9Nx/J1HH69uqGDyhPdGjfBmERkcwunMbYCeNKgUy+
+yyx/sWxcneuXnZkiesO3TcJT0tKxb98hdGzXhkB+lStKDXDT7wG+pWCcRDF01+9HEPM8SgykdHR0
+yXNDsGnjVnw6ZxoWLfxCLAiVthx6/cs+AdAxMIfH1u8J0vewZdsepvOO4vylKxg8oG+5eEhPzaLX
+N0Vmdi4eBTzBpIkjK8VNVEwMTh45BuPatdG7d09FYUx8r9xAEx6aMGkc2nXshOXLVmPD+t+wcZUH
+VHIz0JAu2/2L5cjKSocaa850mJyN5WSEkDs8LAYpYaHQoH505vAxOHbpgD5M+NoxMrUwM0F9S7Pi
+ie7e+ydzp1ncYValJl/1I0d4KDgomIFAKurVr4d6FrJD9mfBofD03I7hw53Rvu27MoyuAkHqWbFy
+I+fQCb9s/rHczx8/dhbRYRFiAJSTlQL32VPRoeO7olYlcCl394XY+ccBDB82mIGNY/E7/AmSy5dv
+YfSIYRju0lX8ueuwQTh16goOHfDCoH69y5UsAp88oRiuzRPCHxYUzNu0KX8DSDu65u1LzxqBAf37
+oV2HDv88oAkjatasMf7YvRleR07D/dP5cOo2AE2atUJCaiao4nCRU6hd5UDPwAg9mzuKO23zdysY
+QtfGyrWr0a1nm3InFhMTh6OHvNCMbty6mF9UwwaF6jx+AUfyjqZ2NpW+QEid/bb9APbtPU6uUrcK
+QAOT9hbkQLqIfZ6EzMwseqlXKx7OX/LGwQNHKOlEwem9Xlj34yrY2JTIPTY276B//964esUbD+7f
+LwaaoPVdvHgVKQnh6NVtHMct2WC6ejqi2G3EJHl53lmIHtMy0hjZp3Njh1H2GUTNsWLxVejH58qf
+yMjKRN+BTgSufBtZ3hWplkcr3cnt2/cwfKQr/rNsHgm+hDsIYq7QXtfaLp4/g6SkXPKmirtNSkpB
+TjZ5Wn0r8VpedVpRYZGYszMyMsR7A/tCT7dEZinvfWlcnKeBwbCxtaMEolulLo2N65ALmZF3xeDi
+patwZkQsNL+7/tiz5zBOnTyPCF7GsbKqh89mf/IKyKQdGOobkkemIJpBkLSlpWUyhRQAU6r0BgYl
+emPSixdIpzxk1aB1uUATgJPLIzObFRsaFGjbt29d6TxSU9PhS43SzLwu2nZUrDcTBlJNoEn40s6d
+e3HN+wbWr19VDLLyACb8LDMzQ7xeJxDfiMjyEreSd4YyIMil6Gtja1ttXiVUcjz092NfueSUsiOp
+vLwiprcKoaGWj5aOgiwju11nnV1MbCKBkoF5Xy5jamwPUtPScO/eA3ptPRjyS4XJ6r79u6ND57JZ
+C6EHbW0NUgx6klIZlkjKOr5MqX00eTzHX7I8/v4BSIyPg7GRNHp+bYz0SBnpmSgoykePHl1Rv4E0
+2ix/LufPXULA4wD06N4RTe3tZE/4DT9RTaCp4Pz5y/DYsB1Tpk1Cixa2MoehQZ0mIzMdGjpGyFfV
+QjKrCgwNSnsPieuOoqajQkH39YS9zA5KfeDSRR/mZMPRrVPrKhVZHjp4nKXmF+A+dwratm0ls6tc
+alR//L4PTSj1uI4cCk+PX+H/4AHMzCzwKaWYIcMHYvHCVYgIecrkNrXHCrykPrUxI5M6DFpK8rNB
+wUFIpchcpJpXPA7hb3Lu3+cFcwsTRqnlBwLXCE4/8ZaZGjp2bstgq+Lb2ZkUs//YeYDpJnP0duoD
+jSoK6DINU8kH5AOaMGPuwAf3/LFy2XryrI5wHTGwSv1rsB6tLQVBH0ogd+/ehZlREas/O5d5Np2u
+P/VFArup3gUWbx8/rFm7BQZGFvSK9iTHFaS7Xs7l7v1H9MwHoUldr0mTEg5V/qReFgkeO4HAwMeY
+M2saxrq6YORQZ0RzgxgY6Iu1cLEJ8XgSFAQzS0suescK7VNE0qXG8p16DeoWf6Ygr1A8AtMJNmnb
+yij91IlzWLVqCUwIzNfbPWphnp67qBkasaYsXUwDlm2Sokih7dp9mCdHNOrwXe3at63S+r3ph+QD
+GkGWyPzZV18vZh1aC3w5fw50ZPCf0gMU1OcCegMVShuPHgeJom8JBZUsoi71tlq1dKBfDX528vQF
+LFn2Awz165DU12eYX1CxfTiXmNh4fLfaA0nU9TSYthEiwcobN9nDQPywehP69u6NYcNdxI8LXsTK
+qkSvehoYhHjKOV06tYJds4qPJS0ejclU/UNZ4ydtxnUMeYznQZeVJ0Lb9usuLFz4X7z//hCMGin0
+J8xJAIzEcpcu+2LBwuWwtrFHN6feOO51GInkc2WbBGQH9h/Hrj1HkM7AwYj1aiYmb1NfrNh6cgFN
+EEFXf7eJBXWmmPHZ5DKZAVmoF4oI1JkOat7MHjmcqFBVoVFKPxKet2pgSa6TxAxBBL8TvIFs/UzQ
+ndau+xl7dh/AqDEj4PbBSHw663M8DQ6mp4mhnFD2jkJkdCyWLP2eRZlZ/HsgX+PLL+YzArzGsqYZ
+kmkUd1uSMrp7/yG++WYV7GwaY8H8ubxs82pmRDp/odgwneAVPJy2dsX19+80bMCj3YLR6TE49etD
+PklNjkdtHRNjnD52jhshGfcf+OOTWZMxY+ZHrJwRlksysOycPBz2OouNG7cw0HiHwvZsBDFnufNX
+DzxgPRomSCch/J/FDrT1Vs/fWZCwC04DnMRMwJPAQFKYtJfDlm1nWetb2e/lAtrmn7YhLCSenmw2
+bMhPJDX8Vf9LLUZG+lBXK2K0VhfR4aGMLnOgoScdgmSHvtumJctcCrB/70GMHDmMlaGVD9E/4DGP
+lB8RGRlPT+vOlJWzSKIdHG3guWUHApiWeR1ogdTMZs2cSw4VhW2/bUSnjm0Zdbphrvs3+J3cy82N
+Qmexq5X84wqlgIUEWQv+3ZDlK+ZXuskEuSOPJesCYCpuhWhgVZf53E+weNFKTJgwE6O5QYQqE0HU
+9o0MhraOPn78/r9o+0oNvwoePwvHevJjv+u34Ty4B0vbJzJIMEIDZls6tG2PvXsPYPyHHxRLJrdv
+3yc9OMBsgS8cHOwx/6tPuLk2idUtMTElEe+bAEnWs1UGmqDtnDtzDW7jR/OmjPQ4kE97SUhMhAYr
+bbV11aixpTBiSy8jJ5iZmXEHT6fxl4lFjV99Pbfc6DMsIgp79x/EUep4etSwVvx3PlM6JUKrq+sw
+bNqwmRcu9qJX7x7FyvttXmz5bM48cqA0bNiwQgSZ0CYxyjt54gJmf/YV9bcijJ8wqth2Z89f4eIs
+gR3TbctXLCDIKi+lSUtPYXotlxtKyEtW1CS2m8JSJ10GC+s3eGDHjl0wrVMHQ1wH49L5izz6MynT
+UP6g981lOXYCvaSv7x2Ktieop+li2VJ3ODl1KxZvNVkd+xWdgOv7bnCbMI2ZgfGIYJbFy+uUKJRP
+mjIOEyeOYRm+Dqs18rjRIvHkr6cvB1jVtaye56sEaCUvPMCKjHNnvTn4URjiUjrqqergJHMRig8z
+mH800tfiTopgxW0SXXjZspTpMybDx+c683orxMBh+vRpoqYmBFLhzBcePnIU/jzG8nkReezYsZjM
+TEUdcpvSrRWzFC4uziyW3Ie69Rpg0aKvcNXbB24jxkOHQJnzxVx07tal+BEDfX38vHkdhg0bhzlM
+r9267ScmmZ8ysX1w/1G0ftcRK7779iXIKje2Pitc1MgTBL4pC2iazMVOmDCGdh2AhKQX1M9MyDH1
+sYteadG3q+itvhQ3SVrmC/GmmZAuGk1PP5XRvpl5STZF2s9QBiYrVi5heft6fDN/EcdrRO9uhymT
+PsDoMa7Fw7Gxawg96nixlGgqa4IQnEwve+XSn/TAFlWKyst7XyVAk4BowYLlTLcEYfJHozFkaG8e
+fdW5WCLp2traCseYlgkPi+JFk2fM+5V/Y10oPf7FcwNvT9XDzz954Mjh0zxChaiwKXmKKoVYHaaK
+BqNbl07oRs2obJMAYemyhTxS4/DTJk9ynUc8Kv5Ca6aXVq5ZSi7kSLYjHP2Szwp1akJS+ew5L/zw
+/U84ffoULpy7wGNYhUBwxcwZU2Es3jmQHQ07D34Pp88eYfak6sUAguIvfEnb2FGu4qVrn2u3WRov
+1P1nwdqqIbr37Iqm5IiSVg7g6bnmffEZXAi48PAwFhOYs+LGuszJ0YuBmOe2vbhz97F4PdH8NdBG
+8W+l/PUkhHdx75B+BIicbor9aNFWVeHNr69JpUfnZo8duOP3DG5jhsGFXKD6IJMYxLqRFYoojO7c
+vhtRERHQ0a74IoSg6q9du5Kufhy5xTWkJmfCnJ6pLQlzw/pmFRJxyQQlm0SIBLds+UE8koQSmmkf
+f8ijf2QxZ1MpxS+lxZBCVcmqVYswadIoEm7yLGYABI5XcnNLthcXvFSfPj3L2QDy/ah1C0cIXxW3
+isdiy3u1wldFzZLAsra2oGxyAatXr8cybspUFk4+ZjHC3ft/4ejRE4xMM3m5qDM+4i2yrl3bl7qy
+KNsGVQbafubpfK7do+t2Q78BXSu9riXbfJKBtWxlD2Pe9bxx/Rq6dO6ARo1kl6U4ODiQwFaeHK64
+/yK8w928eAkvtgj183L84b+mTRWvlsu2m+I+ocsKkm8XuCMmIga/bdtNqnCfQnEGc7fxzCrUZX64
+MUaOGMJbZU5v4GBKxl/Ko0nD5hx4kZP9tNETEyePw0DnntVOBb1uJjMS3TmzpvCiyR0MGNAfws5X
+bCvZefKATLFj+ue8vXlzO+za5YHlLDINYeWziakRJk8ei270Xg4Ozd/gonfZOZYCmgqiGerO+PhL
+1oPFYoTrQIwZO+StgUza9dBhQyB8Kds/wwKC9/rp53UU0vNfya2+7dG9wtGOeJ3hzZlkTBjrjFnu
+M3hHssrqx9sel/J9NWyB0gn86pB9WcMVkSSUmBw/fgYXTp/F9BnjMXyUixJksiz3//r38pN9WeYQ
+gSbcmMlKScb4cSPQj6G5BrlT9WQ5Wd0pf/9vtYAINCHfOJRlw8Lfx5C2t4/pf6uJlfMWLFBMwopB
+pnRlSmQowAJl2b7SlSnAzMpXKsNKJQZqxAJKoNWImZWdKIGmxECNWOD/AGM1pznxHMNyAAAAAElF
+TkSuQmCC
+--_004_SYBP282MB405428BA3457A8C426C19246EC6AASYBP282MB4054AUSP_--
+
